@@ -1,17 +1,18 @@
-print('ثبت نام:1')
-print('پذیرش:2')
-print('بیمار فوری:3')
-print('بیمار بعدی:4')
-print('لیست انتظار:5')
-print('لغو نوبت:6')
-print('استعلام نوبت:7')
-print('خروج:8')
 
 normal = []
 emergency = []
 
 
 while True:
+    print('ثبت نام:1')
+    print('پذیرش:2')
+    print('بیمار فوری:3')
+    print('بیمار بعدی:4')
+    print('لیست انتظار:5')
+    print('لغو نوبت:6')
+    print('استعلام نوبت:7')
+    print('خروج:8')
+
     n = int(input('enter a number :'))
     if n == 1:   #ثبت نام
         name = input('enter your name :')
@@ -28,7 +29,7 @@ while True:
         elif normal:
             print(normal.pop(0))
         else:
-            print('empity')
+            print('empty')
 
     elif n == 3:   #بیمار فوری
         name = input('enter your name :')
@@ -72,4 +73,5 @@ while True:
 
     elif n == 8:
         print('exit')
+        break
 
